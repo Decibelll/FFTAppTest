@@ -1,26 +1,46 @@
-# Xcode
-#
-build/
-*.pbxuser
-!default.pbxuser
+# XCode (and ancestors) per-user config (very noisy, and not relevant)
+*.mode1
 *.mode1v3
-!default.mode1v3
 *.mode2v3
-!default.mode2v3
+*.perspective
 *.perspectivev3
-!default.perspectivev3
+*.pbxuser
 xcuserdata
+*.xcbkptlist
+xcschememanagement.plist
+*.xcscmblueprint
 *.xccheckout
-*.moved-aside
-DerivedData
+  
+## Obj-C/Swift specific
 *.hmap
 *.ipa
-*.xcuserstate
-
-# CocoaPods
-#
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
-#
-#Pods/
+   
+# Ignore SVN
+.svn
+    
+# Ignore build
+build
+dist
+    
+# Ignore object files etc.
+*.o
+*.hex
+*.elf
+*.bin
+*.axf
+*.map
+*.d
+*.launch
+    
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+    
+# Ignore Icon.png in root folder (for Tower)
+/Icon.png
